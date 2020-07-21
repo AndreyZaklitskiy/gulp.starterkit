@@ -7,14 +7,9 @@
 @import 'variables';
 
 
-
 html {
-    position: relative;
-    height: 100vh;
-    overflow-x: hidden;
+    box-sizing: border-box;
 }
-body {
-    display: flex;
-    position: relative;
-    flex-direction: column;
+*, *::after, *::before {
+    box-sizing: inherit;
 }
