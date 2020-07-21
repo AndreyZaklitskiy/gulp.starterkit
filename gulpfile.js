@@ -95,13 +95,7 @@ function html() {
 
 function js() {
     src([
-        'node_modules/jquery/dist/jquery.min.js',
-        'src/js/modules/rellax.min.js',
-        'node_modules/jquery-validation/dist/jquery.validate.min.js',
-        "node_modules/maskedinput/dist/jquery.inputmask.bundle.js",
-        "node_modules/maskedinput/dist/inputmask/phone-codes/phone.js",
-        "node_modules/maskedinput/dist/inputmask/phone-codes/phone-be.js",
-        "node_modules/maskedinput/dist/inputmask/phone-codes/phone-ru.js"
+        'node_modules/jquery/dist/jquery.min.js'
     ])
     .pipe(concat('source.min.js'))
     .pipe(dest('dist/js/'))
